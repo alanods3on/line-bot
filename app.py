@@ -39,7 +39,7 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '不好意思，我無法理解你說的內容，請你再說一次'
-    if msg in [hi, Hi, 你好, ]:
+    if msg in ['hi', 'Hi', '你好',' ']:
         r = '你好，請問有需要幫忙嗎?'
     elif msg == '吃過飯了嗎':
         r = '還沒'
